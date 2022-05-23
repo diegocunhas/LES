@@ -19,7 +19,7 @@ class TreinoController extends Controller
 
     public function store(Request $request)
     {
-        Treino::crete($request->all());
+        Treino::create($request->all());
         return View('treino.index')->with('dados',Treino::all());
     }
 

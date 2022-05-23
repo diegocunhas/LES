@@ -20,7 +20,7 @@ class DietaController extends Controller
 
     public function store(Request $request)
     {
-        Dieta::crete($request->all());
+        Dieta::create($request->all());
         return View('dieta.index')->with('dados',Dieta::all());
     }
 

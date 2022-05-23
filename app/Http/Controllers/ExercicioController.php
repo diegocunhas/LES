@@ -19,7 +19,7 @@ class ExercicioController extends Controller
 
     public function store(Request $request)
     {
-        Exercicio::crete($request->all());
+        Exercicio::create($request->all());
         return View('exercicio.index')->with('dados',Exercicio::all());
     }
 
